@@ -1,0 +1,29 @@
+.nav-body {
+    background: #6a3093;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, #6a3093);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+ul a{
+    color: rgb(206, 193, 193);
+}
+ul a:hover{
+    color: rgb(255, 255, 255);
+}
+
+ul a.active {
+    color: white ;
+}
+
+/* Additional styles for touch devices (mobile) */
+@media only screen and (max-width: 768px) {
+    ul a.active {
+        /* Apply the same active link styles for touch devices */
+        color: rgb(119, 108, 108);
+        background: none;
+    }
+}

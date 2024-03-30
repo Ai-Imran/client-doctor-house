@@ -1,0 +1,38 @@
+[
+    {
+      "_id": 1,
+      "name": "John Doe",
+      "image": "https://i.ibb.co/rGSymLH/do1.png",
+      "profession": "Software Engineer",
+      "description": "John Doe is a highly skilled software engineer with expertise in full-stack web development. He has a strong background in JavaScript, React, Node.js, and MongoDB. John is passionate about building scalable and efficient web applications that provide excellent user experiences."
+    },
+    {
+      "_id": 2,
+      "name": "Alice Smith",
+      "image": "https://i.ibb.co/4tJmJHZ/do4-Copy.jpg",
+      "profession": "Data Scientist",
+      "description": "Alice Smith is an experienced data scientist specializing in machine learning and data analysis. She has worked on various projects involving predictive modeling, natural language processing, and computer vision. Alice is adept at using Python, TensorFlow, and scikit-learn to derive insights from complex datasets."
+    },
+    {
+      "_id": 3,
+      "name": "Michael Johnson",
+      "image": "https://i.ibb.co/k9BR1pV/do5-Copy.png",
+      "profession": "Graphic Designer",
+      "description": "Michael Johnson is a talented graphic designer with a keen eye for detail and aesthetics. He has worked on numerous branding, print, and digital design projects for clients across diverse industries. Michael excels in Adobe Creative Suite, including Photoshop, Illustrator, and InDesign."
+    },
+    {
+      "_id": 4,
+      "name": "Emily Brown",
+      "image": "https://i.ibb.co/g3LByDj/doc2jpg-Copy.jpg",
+      "profession": "Marketing Manager",
+      "description": "Emily Brown is a dynamic marketing manager with extensive experience in digital marketing, content creation, and social media management. She has a proven track record of developing and executing successful marketing campaigns that drive brand awareness and customer engagement."
+    },
+    {
+      "_id": 5,
+      "name": "David Wilson",
+      "image": "https://i.ibb.co/RCM73S4/pt1-Copy.jpg",
+      "profession": "Financial Analyst",
+      "description": "David Wilson is a seasoned financial analyst with expertise in financial modeling, budgeting, and forecasting. He has worked in both corporate finance and investment banking roles, analyzing financial data and providing strategic recommendations to drive business growth and profitability."
+    }
+  ]
+  
