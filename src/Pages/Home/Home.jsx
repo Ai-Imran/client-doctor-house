@@ -1,5 +1,7 @@
 import Banner from "./Banner";
+import BookNow from "./BookNow";
 import ContactUs from "./ContactUs";
+import ExpertDoctors from "./ExpertDoctors";
 import PtCarousel from "./PtCarousel";
 import Services from "./Services";
 
@@ -14,6 +16,8 @@ const Home = () => {
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque <br /> laudantium, totam rem aperiam, eaque ipsa quae  ab illo inve ntore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
       </div>
       <PtCarousel/>
+      <ExpertDoctors/>
+      <BookNow/>
     </div>
   );
 };

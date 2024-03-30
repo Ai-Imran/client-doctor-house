@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "1",
+    "name": "Dr. Emily Carter",
+    "doctor_category": "Pediatrician",
+    "location": "Sunrise Hospital",
+    "available_date": "2024-04-05",
+    "price": "$120",
+    "rating": 5,
+    "image": "https://i.ibb.co/k9BR1pV/do5-Copy.png"
+  },
+  {
+    "_id": "2",
+    "name": "Dr. Michael Johnson",
+    "doctor_category": "Cardiologist",
+    "location": "City Heart Center",
+    "available_date": "2024-04-10",
+    "price": "$200",
+    "rating": 5,
+    "image": "https://i.ibb.co/g3LByDj/doc2jpg-Copy.jpg"
+  },
+  {
+    "_id": "3",
+    "name": "Dr. Sarah Patel",
+    "doctor_category": "Dermatologist",
+    "location": "Skin Care Clinic",
+    "available_date": "2024-04-15",
+    "price": "$150",
+    "rating": 5,
+    "image": "https://i.ibb.co/qs6Tpky/exodc3.jpg"
+  }
+]

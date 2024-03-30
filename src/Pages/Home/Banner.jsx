@@ -8,7 +8,7 @@ import './style.css'
 const Banner = () => {
     
     return (
-        <div className=" nav-body  ">
+        <div className=" nav-body relative ">
          <div className="flex gap-6 ml-24 mb-10 pt-10 text-white ">
          <div className='space-y-5 '>
                 <h2 className="text-6xl font-bold">
@@ -24,6 +24,7 @@ const Banner = () => {
 
             </div>
          </div>
+         {/* <h2 className='absolute top-0 right-12'>ffdfdf</h2> */}
         </div>
     );
 };

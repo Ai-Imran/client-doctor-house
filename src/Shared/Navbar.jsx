@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/doclogo.png";
+import logo from "../assets/doclo.png";
 import "./style.css";
 // import Banner from "../Pages/Home/Banner";
 
