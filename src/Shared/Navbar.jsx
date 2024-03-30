@@ -31,19 +31,18 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
+              
                 <NavLink to={"/"}>Home</NavLink>
-              </li>
+           
 
-              <li>
+            
                 <NavLink to={"/"}>About</NavLink>
-              </li>
-              <li>
+              
                 <NavLink to={"/appointment"}>Appoointment</NavLink>
-              </li>
-              <li>
+             
+             
                 <NavLink to={"/appointment"}>Login</NavLink>
-              </li>
+             
             </ul>
           </div>
           <Link>
@@ -55,7 +54,7 @@ const Navbar = () => {
             <NavLink to={"/"}>Home</NavLink>
             <NavLink to={"/appointment"}>Appointment</NavLink>
             <NavLink to={'/profile'}>About</NavLink>
-            <NavLink to={"/about"}>Login</NavLink>
+            <NavLink to={"/login"}>Login</NavLink>
           </ul>
         </div>
       

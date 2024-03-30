@@ -16,7 +16,7 @@ const ExpertDoctors = () => {
         <h2 className="text-3xl font-bold">Our Expert Doctors</h2>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, <br /> eaque ipsa quae ab illo inve ntore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
       </div>
-      <div className="flex justify-center gap-6 my-16">
+      <div className="lg:flex md:px-20 space-y-3 justify-center gap-6 my-16">
         {
           experts.map(expert => <div key={expert._id} className="card  card-compact bg-base-100 px-1 border border-lime-500">
             <figure><img className="object-contain pt-2 rounded-md h-[300px] w-[350px]" src={expert.image} alt="Doctor" /></figure>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/doclo.png";
 
 const Footer = () => {
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="bg-[#2c3e50] pb-16 text-[#bdc3c7]">
           <footer className="footer p-10 ">
             <aside>
-                <img className="w-32 rounded-lg" src={logo} alt="" />
+                <Link to={'/'}><img className="w-32 rounded-lg" src={logo} alt="" /></Link>
                 <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
             </aside>
             <nav>
@@ -48,7 +49,7 @@ const Footer = () => {
             
         </footer>
         <div className="divider w-1/2 divider-secondary mx-auto "></div>
-       <div className="mx-auto w-[320px]"> <small className="mx-auto"> All Reseverd by {formatedDate} ,no CopyRight </small></div>
+       <div className="mx-auto md:text-center lg::w-[320px]"> <small className="mx-auto"> All Reseverd by {formatedDate} ,no CopyRight </small></div>
       </div>
     );
 };

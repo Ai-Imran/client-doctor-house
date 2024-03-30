@@ -19,7 +19,7 @@ const PtCarousel = () => {
       .then((data) => setReview(data));
   }, []);
   return (
-    <div className="my-20 flex px-20 items-center text-justify">
+    <div className="my-20 lg:flex md:space-y-7 px-20 items-center text-justify">
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         {review.map((rev) => (
           <SwiperSlide key={rev._id}>
@@ -40,10 +40,10 @@ const PtCarousel = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper ">
         {review.map((rev) => (
           <SwiperSlide key={rev._id}>
-            <div className="mx-16">
+            <div className="mx-16 ">
               <div className="flex">
                 <div className="avatar ml-4">
                   <div className="w-24 rounded-full">

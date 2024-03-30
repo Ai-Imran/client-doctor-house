@@ -2,8 +2,8 @@ import { LocationOn, PhoneInTalk, WatchLater } from "@mui/icons-material";
 
 const ContactUs = () => {
   return (
-    <div className=" my-20 text-white  flex justify-center gap-8">
-      <div className="flex rounded-md gap-6 px-8 py-6 bg-[#07332F]">
+    <div className=" my-20 text-white md:px-3 flex justify-center gap-8">
+      <div className=" lg:flex rounded-md gap-6 px-8 py-6 bg-[#07332F]">
         <WatchLater />
         <div>
           <h3 className="font-bold">Opeaning Hours</h3>
@@ -12,7 +12,7 @@ const ContactUs = () => {
           </p>
         </div>
       </div>
-      <div className="flex rounded-md gap-6 px-8 py-6 bg-[#6ab04c]">
+      <div className="lg:flex rounded-md gap-6 px-8 py-6 bg-[#6ab04c]">
         <LocationOn />
         <div>
           <h3 className="font-bold">Our Location</h3>
@@ -22,7 +22,7 @@ const ContactUs = () => {
           </p>
         </div>
       </div>
-      <div className="flex rounded-md gap-6 px-8 py-6 bg-[#07332F]">
+      <div className="lg:flex rounded-md gap-6 md:px-3 lg:px-8 py-6 bg-[#07332F]">
         <PhoneInTalk />
         <div>
           <h3 className="font-bold">Contact Us</h3>

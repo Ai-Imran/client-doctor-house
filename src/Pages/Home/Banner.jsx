@@ -9,17 +9,17 @@ const Banner = () => {
     
     return (
         <div className=" nav-body relative ">
-         <div className="flex gap-6 ml-24 mb-10 pt-10 text-white ">
+         <div className="lg:flex gap-6 ml-24 mb-10 pt-10 text-white ">
          <div className='space-y-5 '>
-                <h2 className="text-6xl font-bold">
+                <h2 className="lg:text-6xl font-bold">
                 Your Best Medical <br /> Help Center
                 </h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing <br /> elit. Hic assumenda itaque perspiciatis totam, consequuntur atque,<br /> vero voluptatum ab maiores ipsa perferendis sit odio possimus <br /> cum ad sed sequi! Pariatur, inventore..</p>
                <Button btnName={"All Service"}/>
             </div>
-            <div className='relative'>
+            <div className='relative mt-4'>
                 <img className='w-[300px] ' src={doc1} alt="" />
-                <img className='w-[160px] orgin-to border-[#fff200] rotate-12 border absolute left-[120px] -top-[140px]' src={doc2} alt="" />
+                <img className='w-[160px] orgin-to border-[#fff200] rotate-12 border absolute md:left-[170px] lg:left-[120px] md:-top-[90px] lg:-top-[140px]' src={doc2} alt="" />
                 <img className='w-[200px] origin-top-left rotate-12 border h-[292px] absolute top-8 left-[340px]' src={doc3} alt="" />
 
             </div>

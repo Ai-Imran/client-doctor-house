@@ -23,17 +23,17 @@ const Services = () => {
   };
 
   return (
-    <div className="flex  justify-center mb-10 gap-10 items-start">
+    <div className=" lg:flex justify-center md:space-y-2 mb-10 gap-10 items-start">
       <div className=" ">
         <img
-          className="h-[800px]  rounded border border-lime-400"
+          className="h-[800px] md:text-center md:mx-auto rounded border border-lime-400"
           src={srdoc}
           alt="Services Image"
         />
       </div>
       <div>
-        <h2 className="font-bold text-xl">Our Services</h2>
-        <p className="w-[460px] font-bold text-justify ">
+        <h2 className="font-bold md:text-center text-xl">Our Services</h2>
+        <p className="w-[460px] md:mx-auto font-bold text-justify ">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inve ntore veritatis et quasi architecto beatae vitae dicta
