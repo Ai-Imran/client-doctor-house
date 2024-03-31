@@ -9,7 +9,7 @@ const Banner = () => {
     
     return (
         <div className=" nav-body relative ">
-         <div className="lg:flex gap-6 ml-24 mb-10 pt-10 text-white ">
+         <div className="lg:flex gap-6 ml-24 mb-10 pt-20 text-white ">
          <div className='space-y-5 '>
                 <h2 className="lg:text-6xl font-bold">
                 Your Best Medical <br /> Help Center

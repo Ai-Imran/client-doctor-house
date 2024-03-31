@@ -7,8 +7,8 @@ const Navbar = () => {
   // const links
 
   return (
-    <div className="nav-body">
-      <div className="navbar  flex p-8 justify-between">
+    <div className="nav-body ">
+      <div className="navbar  flex px-8 pt-4 justify-between">
         <div className="">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

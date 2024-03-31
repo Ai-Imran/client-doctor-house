@@ -4,11 +4,14 @@ import Appointment from "../Pages/Appointment/Appointment";
 import Home from "../Pages/Home/Home";
 import Banner from "../Pages/Home/Banner";
 import Login from "../Pages/Login/Login";
+import error from '../assets/error.png'
+import Signin from "../Pages/Signin/Signin";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
+    errorElement: <img className="mx-auto " src={error} alt="" />,
     children: [
       {
         path: "/",
@@ -25,6 +28,10 @@ export const router = createBrowserRouter([
       {
         path: 'login',
         element: <Login/>
+      },
+      {
+        path: 'signin',
+        element: <Signin/>
       }
       
       
