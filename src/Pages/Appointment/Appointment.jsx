@@ -6,7 +6,7 @@ import sr2 from '../../assets/sr2.png'
 const Appointment = () => {
 
     const currentDate = new Date();
-    const month = currentDate.toLocaleString('default',{month:'long'});
+    const month = currentDate.toLocaleString('default', { month: 'long' });
     const date = currentDate.getDate();
     const year = currentDate.getFullYear()
     return (
@@ -42,14 +42,18 @@ const Appointment = () => {
             {/* Open the modal using document.getElementById('ID').showModal() method */}
             <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
-                   <input className='block mb-2 w-full border border-lime-500 outline-none rounded-md p-2 py-2'   type="date" />
-                   <input className='block mb-2 w-full border border-lime-500 outline-none rounded-md p-2 py-2'   type="time" />
-                   <input className='block mb-2 w-full border border-lime-500 outline-none rounded-md p-2 py-2'   type="text" placeholder='service name' />
-                   <input  className='block mb-2 w-full border border-lime-500 outline-none rounded-md p-2 py-2'  type="email" placeholder='Enter your email'/>
-                    <div className="modal-action">
+                    <input className='block mb-2 w-full border border-lime-500 outline-none rounded-md p-2 py-2' type="date" />
+                    <input className='block mb-2 w-full border border-lime-500 outline-none rounded-md p-2 py-2' type="time" />
+                    <input className='block mb-2 w-full border border-lime-500 outline-none rounded-md p-2 py-2' type="text" placeholder='service name' />
+                    <input className='block mb-2 w-full border border-lime-500 outline-none rounded-md p-2 py-2' type="email" placeholder='Enter your email' />
+                    <div className="">
                         <form method="dialog">
                             {/* if there is a button in form, it will close the modal */}
                             <button className="btn lg:w-[459px] hover:bg-[#30336b] outline-none border-0 text-white font-bold bg-[#130f40] mb-8">Submit</button>
+
+                        </form>
+                        <form method="dialog" className="modal-backdrop">
+                        <button className="btn lg:w-[459px] hover:bg-[#30336b] outline-none border-0 text-white font-bold bg-[#130f40] mb-8">close</button>
 
                         </form>
                     </div>

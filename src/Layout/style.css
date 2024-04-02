@@ -1,0 +1,12 @@
+ a{
+    color: #cec1c1;
+   
+}
+ a:hover{
+    color: rgb(255, 255, 255);
+   
+}
+
+ a.active {
+    color: white ;
+}

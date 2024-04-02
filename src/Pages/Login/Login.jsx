@@ -1,17 +1,47 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from '../../assets/Frame.png'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import GoogleIcon from '@mui/icons-material/Google';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const Login = () => {
+    const {googleUser,userlogin} = useContext(AuthContext)
     const [show, setShow] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation()
+
+    const from = location?.state?.from?.pathName || '/';
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        const form = e.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        // const newUser = { name,email,password}
+       
+        userlogin(email,password)
+        .then(res => {
+            console.log(res.user);
+            navigate(from, {replace : true})
+        })
+        .catch(err => {
+            console.log(err);
+        })
+       
+    }
+    const handleGoogle = () => {
+        googleUser()
+        .then(res => {
+            console.log(res.user);
+            navigate(from, {replace : true})
+        })
+        .catch(err => {
+            console.log(err);
+        })
     }
 
     return (
@@ -48,7 +78,7 @@ const Login = () => {
                 </form>
                 <div className="divider w-full text-white divider-secondary">Or</div>
                 <div className='text-purple-500 lg:ml-4 space-x-6 mx-auto text-center'>
-                    <GoogleIcon className='text-3xl'/>
+                   <span onClick={handleGoogle}> <GoogleIcon className='text-3xl'/></span>
                     <FacebookIcon/>
                     <TwitterIcon/>
                 </div>

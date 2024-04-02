@@ -6,6 +6,8 @@ import Banner from "../Pages/Home/Banner";
 import Login from "../Pages/Login/Login";
 import error from '../assets/error.png'
 import Signin from "../Pages/Signin/Signin";
+import Admin from "../Layout/Admin";
+import AddDoctor from "../Pages/Dashboard/AddDoctor/AddDoctor";
 
 export const router = createBrowserRouter([
   {
@@ -23,18 +25,27 @@ export const router = createBrowserRouter([
       },
       {
         path: '/',
-        element:<Banner/>
+        element: <Banner />
       },
       {
         path: 'login',
-        element: <Login/>
+        element: <Login />
       },
       {
         path: 'signin',
-        element: <Signin/>
+        element: <Signin />
       }
-      
-      
     ],
+
   },
+  {
+    path: '/dashboard',
+    element: <Admin/>,
+    children: [
+      {
+        path: 'addDoctor',
+        element: <AddDoctor/>
+      }
+    ]
+  }
 ]);
